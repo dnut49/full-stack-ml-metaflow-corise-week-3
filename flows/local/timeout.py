@@ -4,7 +4,7 @@ import time
 
 class TimeoutFlow(FlowSpec):
     @retry
-    @timeout(seconds=5)
+    @timeout(seconds=2)
     @step
     def start(self):
         for i in range(int(time.time() % 10)):
